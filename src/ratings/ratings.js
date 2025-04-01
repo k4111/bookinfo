@@ -11,7 +11,9 @@
 //   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
-
+const apm = require('elastic-apm-node').start({
+  // Add configuration options here.
+});
 var http = require('http')
 var dispatcher = require('httpdispatcher')
 

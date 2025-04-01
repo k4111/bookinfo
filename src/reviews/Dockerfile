@@ -26,6 +26,7 @@ FROM open-liberty:24.0.0.1-kernel-slim-java17-openj9
 ENV SERVERDIRNAME=reviews
 
 COPY --from=builder /home/gradle/reviews-wlpcfg/servers/LibertyProjectServer/ /opt/ol/wlp/usr/servers/defaultServer/
+COPY  elastic-apm-agent-1.52.2.jar /opt/ol/wlp/usr/servers/defaultServer/elastic-apm-agent-1.52.2.jar
 # Not sure why but we need root to build, but without it buildx cannot get network connectivity. We swap to 1001 later.
 # hadolint ignore=DL3002
 USER 0

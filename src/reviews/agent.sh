@@ -1,0 +1,1 @@
+wget https://repo1.maven.org/maven2/co/elastic/apm/elastic-apm-agent/1.52.2/elastic-apm-agent-1.52.2.jar
