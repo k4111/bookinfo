@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "node ratings.js"
+  },
+  "dependencies": {
+    "httpdispatcher": "1.0.0",
+    "mongodb": "^3.6.0",
+    "mysql": "^2.15.0",
+    "elastic-apm-node": "^4.11.2"
+  },
+  "private": true
+}
